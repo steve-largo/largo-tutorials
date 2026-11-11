@@ -8,6 +8,7 @@ Practical, code-heavy implementations of ML concepts: embeddings, agent orchestr
 
 ### AI Agents & Orchestration
 - **[Agent Orchestration in Practice: Google ADK vs LangGraph](agents/adk-vs-langgraph/)**: Head-to-head implementation of a live coastal marine report workflow in Google ADK 2.x (`Workflow`, `@node`, `JoinNode`, `LlmAgent`) and LangGraph (`StateGraph`, `Annotated` reducers, `InMemorySaver`) over a shared NOAA / Open-Meteo / NWS domain layer.
+- **[Stateful Agent Memory: Rolling Sessions vs Vector RAG vs Vertex AI Memory Bank](agents/agent-memory-benchmark/)**: Eight-session longitudinal benchmark comparing sliding-window context, ADK `InMemoryMemoryService`, SQLite vector RAG, and consolidated slot-reconciling memory (`BaseMemoryService` / `VertexAiMemoryBankService` + `SqliteSessionService`).
 
 ### Embeddings
 - **[Sentence Embeddings from Scratch](embeddings/sentence-embeddings-from-scratch/)**: Build a BiLSTM sentence encoder with PyTorch. Covers tokenization, embedding layers, and pooling strategies.

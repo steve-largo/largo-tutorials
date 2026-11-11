@@ -1,0 +1,10 @@
+google-adk>=2.14.0,<3.0.0
+google-genai>=2.34.0,<3.0.0
+aiosqlite>=0.21.0,<1.0.0
+pydantic>=2.14.0,<3.0.0
+pydantic-settings>=2.12.0,<3.0.0
+pytest>=9.0.0,<10.0.0
+pytest-asyncio>=1.4.0,<2.0.0
+ruff>=0.15.0,<1.0.0
+# Optional for live VertexAiMemoryBankService & VertexAiSessionService:
+# google-cloud-agentplatform[agent-engines]>=2.2.0,<3.0.0
