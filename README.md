@@ -2,15 +2,18 @@
 
 Companion code for tutorials at [largo.dev](https://largo.dev).
 
-Practical, code-heavy implementations of ML concepts—embeddings, transformers, time series, edge deployment, and more.
+Practical, code-heavy implementations of ML concepts: embeddings, agent orchestration, transformers, time series, and production serving.
 
 ## Tutorials
 
+### AI Agents & Orchestration
+- **[Agent Orchestration in Practice: Google ADK vs LangGraph](agents/adk-vs-langgraph/)**: Head-to-head implementation of a live coastal marine report workflow in Google ADK 2.x (`Workflow`, `@node`, `JoinNode`, `LlmAgent`) and LangGraph (`StateGraph`, `Annotated` reducers, `InMemorySaver`) over a shared NOAA / Open-Meteo / NWS domain layer.
+
 ### Embeddings
-- **[Sentence Embeddings from Scratch](embeddings/sentence-embeddings-from-scratch/)** — Build a BiLSTM sentence encoder with PyTorch. Covers tokenization, embedding layers, and pooling strategies.
+- **[Sentence Embeddings from Scratch](embeddings/sentence-embeddings-from-scratch/)**: Build a BiLSTM sentence encoder with PyTorch. Covers tokenization, embedding layers, and pooling strategies.
 
 ### Predictive Maintenance
-- **[Hard Drive Failure Prediction](predictive-maintenance/hard-drive-failure/)** — Predict drive failures using Backblaze SMART data (24.8M records, Q4 2023). Compares XGBoost, LSTM, Transformer, and Mamba architectures.
+- **[Hard Drive Failure Prediction](predictive-maintenance/hard-drive-failure/)**: Predict drive failures using Backblaze SMART data (24.8M records, Q4 2023). Compares XGBoost, LSTM, Transformer, and Mamba architectures.
 
   | Model | Test AUC | F2 | Recall | Notes |
   |-------|----------|-----|--------|-------|
@@ -27,7 +30,7 @@ Practical, code-heavy implementations of ML concepts—embeddings, transformers,
 
 ```bash
 # Clone the repo
-git clone https://github.com/StoliRocks/largo-tutorials.git
+git clone https://github.com/steve-largo/largo-tutorials.git
 cd largo-tutorials
 
 # Install common dependencies
@@ -39,7 +42,7 @@ pip install -r embeddings/sentence-embeddings-from-scratch/requirements.txt
 
 ## Author
 
-**Steven W. White** — [largo.dev](https://largo.dev) · [LinkedIn](https://www.linkedin.com/in/stvwhite)
+**Steven W. White** · [largo.dev](https://largo.dev) · [LinkedIn](https://www.linkedin.com/in/stvwhite)
 
 ## License
 
