@@ -1,0 +1,39 @@
+[project]
+name = "gemma4-serving"
+version = "0.1.0"
+description = "Gemma 4 26B-A4B MoE VRAM sizing, PEFT LoRA language-backbone recipe, vLLM OpenAI-compatible Google ADK 2.14 adapter, and Vertex AI dedicated endpoint deployment toolkit."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk>=2.14.0,<3.0.0",
+    "google-genai>=2.34.0,<3.0.0",
+    "httpx>=0.28.0,<1.0.0",
+    "aiosqlite>=0.21.0,<1.0.0",
+    "pydantic>=2.14.0,<3.0.0",
+    "pydantic-settings>=2.12.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+training = [
+    "transformers>=5.5.2,<6.0.0",
+    "peft>=0.19.0,<1.0.0",
+    "trl>=1.1.0,<2.0.0",
+    "datasets>=3.4.0,<5.0.0",
+]
+vertex = [
+    "google-cloud-aiplatform>=1.88.0,<2.0.0",
+]
+dev = [
+    "pytest>=9.0.0,<10.0.0",
+    "pytest-asyncio>=1.4.0,<2.0.0",
+    "ruff>=0.15.0,<1.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
