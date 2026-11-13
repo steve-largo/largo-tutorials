@@ -52,7 +52,7 @@ Note: This is an UNTRAINED model with random weights.
 
 ## Files
 
-- `sentence_encoder.py` — Complete implementation with demo
+- `sentence_encoder.py`: Complete implementation with demo
 
 ## Next Steps
 

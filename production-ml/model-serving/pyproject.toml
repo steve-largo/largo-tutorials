@@ -1,0 +1,29 @@
+[project]
+name = "model-serving"
+version = "0.1.0"
+description = "Typed FastAPI model serving service and PyTorch inference benchmark comparing eager FP32, torch.inference_mode, FP16/BF16 autocast, and torch.compile."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0,<1.0.0",
+    "httpx>=0.27.0,<1.0.0",
+    "numpy>=2.0.0,<3.0.0",
+    "pydantic>=2.10.0,<3.0.0",
+    "pydantic-settings>=2.8.0,<3.0.0",
+    "torch>=2.4.0,<3.0.0",
+    "uvicorn>=0.30.0,<1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0,<10.0.0",
+    "ruff>=0.9.0,<1.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

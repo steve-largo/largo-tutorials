@@ -1,0 +1,27 @@
+[project]
+name = "cross-encoders-reranking"
+version = "0.1.0"
+description = "Two-stage bi-encoder retrieval and MS MARCO cross-encoder reranking pipeline evaluating MRR@10, Precision@1, and candidate-pool latency scaling across top-10, top-50, and top-100."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.0.0,<3.0.0",
+    "pydantic>=2.10.0,<3.0.0",
+    "pydantic-settings>=2.8.0,<3.0.0",
+    "sentence-transformers>=3.4.0,<7.0.0",
+    "torch>=2.4.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0,<10.0.0",
+    "ruff>=0.9.0,<1.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

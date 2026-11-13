@@ -81,11 +81,11 @@ We split data by time (train on past, test on future) to prevent data leakage an
 
 ## Key Takeaways
 
-1. **Don't trust accuracy** — 99.99% accuracy means nothing with 0.01% failure rate
-2. **Balanced sampling is essential** — Improves recall from 3% to 72%+
-3. **Conv1D preprocessing helps all sequence models** — CNN-LSTM and Conv-Transformer both outperform basic versions by 20%+ F1
-4. **XGBoost for precision, CNN-LSTM for recall** — Choose based on your cost model
-5. **Simpler transformers work better** — d_model=32, 1 layer beats complex architectures on short sequences
+1. **Don't trust accuracy**: 99.99% accuracy means nothing with 0.01% failure rate
+2. **Balanced sampling is essential**: Improves recall from 3% to 72%+
+3. **Conv1D preprocessing helps all sequence models**: CNN-LSTM and Conv-Transformer both outperform basic versions by 20%+ F1
+4. **XGBoost for precision, CNN-LSTM for recall**: Choose based on your cost model
+5. **Simpler transformers work better**: d_model=32, 1 layer beats complex architectures on short sequences
 
 ## Next Steps
 
